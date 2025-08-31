@@ -1,0 +1,32 @@
+{
+  "name": "Nango Detector",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:5000/*",
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/web 16-01.png",
+      "48": "icons/web 48-01.png",
+      "128": "icons/web 128-01.png"
+    }
+  }
+}
