@@ -1,0 +1,88 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #121212; /* dark black background */
+  margin: 0;
+  padding: 15px;
+  width: 380px;
+  height: 350px;
+  color: #ffc107; /* yellow-orange text */
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #ffc107;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ffb300; /* slightly more orange */
+  box-shadow: 0 0 8px #ffb300;
+}
+
+button {
+  font-family: 'Poppins', Arial, sans-serif;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ffb300, #ffc107);
+  color: #121212;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1em;
+  box-shadow: 0 4px 15px rgba(255, 179, 0, 0.6);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ffc107, #ffb300);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 179, 0, 0.9);
+}
+
+.result {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.safe {
+  color: #a5d6a7; /* soft green */
+}
+
+.malicious {
+  color: #ef5350; /* soft red */
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%; /* makes it circular */
+  vertical-align: middle;
+  margin-right: 8px; /* space between icon and text */
+}
+.middle-image {
+  display: block;
+  margin: 15px auto; /* centers horizontally */
+ 
+}
